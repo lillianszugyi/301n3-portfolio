@@ -1,0 +1,15 @@
+* {
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  display: block;
+  padding: 20px;
+  font-weight: bold;
+}
+
+nav li {
+  display:inline;
+  list-style:none;
+  padding: 30px;
+}
