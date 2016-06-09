@@ -25,6 +25,10 @@ nav li {
   text-decoration: none;
 }
 
+footer a {
+  text-decoration: none;
+  padding: 0 10px;
+}
 img {
   max-width: 300px;
   display: block;
