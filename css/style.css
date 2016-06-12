@@ -19,8 +19,13 @@ a {
   padding: 10px 30px 10px 0;
 }
 
+div.icon-menu {
+  text-align: left;
+}
+
 nav ul {
   padding: 0;
+  display: none;
 }
 
 nav li {
@@ -45,8 +50,12 @@ img {
   margin: 30px auto;
 }
 
-/*@media screen and (min-width: 600px) {
-  img {
-    max-width: 100%;
+@media screen and (min-width: 600px) {
+  .icon-menu {
+    display: none;
+  }
+
+  nav ul {
+    display: unset;
   }
 }
