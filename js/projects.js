@@ -16,7 +16,7 @@ var data = [
   },
   {
     title: 'Augmented Reality Hackathon',
-    category: 'vr/ar',
+    category: 'vr-ar',
     body: '<p>Personas pair programming hacker pitch deck pivot paradigm physical computing food-truck affordances co-working thought leader minimum viable product. Ideate user story hacker user story long shadow personas entrepreneur parallax user centered design. Unicorn entrepreneur hacker driven integrate food-truck responsive moleskine waterfall is so 2000 and late iterate unicorn long shadow. User centered design prototype latte hacker minimum viable product fund driven actionable insight big data prototype food-truck. Sticky note iterate thinker-maker-doer cortado pitch deck food-truck grok pitch deck paradigm actionable insight user story pivot.<img src="https://images.unsplash.com/photo-1446776858070-70c3d5ed6758"></p>'
   },
   {

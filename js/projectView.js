@@ -9,7 +9,7 @@ projectView.populateFilters = function() {
         $('#category-filter').append(optionTag);
       }
     }
-  }
+  })
 };
 
 projectView.handleCategoryFilter = function() {
@@ -22,7 +22,7 @@ projectView.handleCategoryFilter = function() {
       $('article').show();
       $('article.template').hide();
     };
-  };
+  });
 };
 
 
@@ -34,10 +34,9 @@ projectView.handleMainNav = function() {
 
   $('.main-nav .tab:first').click();
 };
-}
 
   $(document).ready(function(){
-    articleView.populateFilters();
-    articleView.handleCategoryFilter();
-    articleView.handleMainNav();
+    projectView.populateFilters();
+    projectView.handleCategoryFilter();
+    projectView.handleMainNav();
   });
