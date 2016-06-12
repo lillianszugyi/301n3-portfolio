@@ -1,0 +1,13 @@
+.navBlock {
+  display: inline-block;
+  padding: 10px 30px 10px 0;
+}
+
+div.icon-menu {
+  text-align: left;
+}
+
+#filters {
+  list-style: none;
+  padding: 0;
+}

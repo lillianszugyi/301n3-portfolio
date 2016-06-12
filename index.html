@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/modules.css">
+    <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/icons.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+    <script id="projectTemplate" type="text/x-handlebars-template">
+      <article data-category="{{category}}">
+        <header>
+          <h1>{{title}}</h1>
+        </header>
+          <section class="project-body">{{{body}}}</section>
+      </article>
+    </script>
     <title>Lillian Szugyi, UX Designer</title>
   </head>
   <body>
+    <div class="icon-menu"></div>
     <header>
       <h1>LILLIAN SZUGYI</h1>
 
@@ -18,19 +30,6 @@
           <li class="navBlock"><a href="#">CONTACT</a></li>
         </ul>
       </nav>
-
-      <section id="articles" class="tab-content">
-        <div>
-          <ul id="filters">
-            <li>
-              <select id="category-filter">
-                <option value="">Filter by Categories</option>
-              </select>
-            </li>
-          </ul>
-        </div>
-      </section>
-
     </header>
     <main>
 
@@ -46,12 +45,15 @@
       </section>
 
       <section id="projects" class="tab-content">
-        <article class="template" data-category="">
-          <header>
-            <h1></h1>
-          </header>
-            <section class="project-body"></section>
-        </article>
+          <div>
+            <ul id="filters">
+              <li>
+                <select id="category-filter">
+                  <option value="">Filter by Categories</option>
+                </select>
+              </li>
+            </ul>
+          </div>
       </section>
 
     </main>
@@ -63,5 +65,8 @@
     </footer>
     <script src="js/projects.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/projectView.js">
+
+    </script>
   </body>
 </html>
