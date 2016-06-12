@@ -1,0 +1,20 @@
+nav ul {
+  padding: 0;
+  display: none;
+}
+
+nav li {
+  display:inline;
+  list-style:none;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 600px) {
+  .icon-menu {
+    display: none;
+  }
+
+  nav ul {
+    display: unset;
+  }
+}

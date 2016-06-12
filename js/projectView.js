@@ -9,7 +9,7 @@ projectView.populateFilters = function() {
         $('#category-filter').append(optionTag);
       }
     }
-  }
+  })
 };
 
 projectView.handleCategoryFilter = function() {
@@ -22,7 +22,7 @@ projectView.handleCategoryFilter = function() {
       $('article').show();
       $('article.template').hide();
     };
-  };
+  });
 };
 
 
@@ -32,12 +32,25 @@ projectView.handleMainNav = function() {
     $("#" + $(this).data('content')).fadeIn('slow');
   });
 
-  $('.main-nav .tab:first').click();
+  $('.main-nav .navBlock:first').click();
 };
-}
+
+projectView.hamburgerToggle = function() {
+  $('.icon-menu').on('click', function() {
+    $('nav ul').toggle('slow');
+  });
+  $(window).on('resize', function() {
+    if ($(window).width() >= 600) {
+      $('nav ul').show();
+    } else {
+      $('nav ul').hide();
+    }
+  });
+};
 
   $(document).ready(function(){
-    articleView.populateFilters();
-    articleView.handleCategoryFilter();
-    articleView.handleMainNav();
+    projectView.populateFilters();
+    projectView.handleCategoryFilter();
+    projectView.handleMainNav();
+    projectView.hamburgerToggle();
   });

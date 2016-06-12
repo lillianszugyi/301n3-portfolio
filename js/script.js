@@ -7,15 +7,10 @@ function Project (opts) {
 }
 
 Project.prototype.toHtml = function() {
-  var $newProject = $('article.template').clone();
-
-  $newProject.attr('data-category', this.category);
-  $newProject.find('h1').text(this.title);
-  $newProject.find('.project-body').html(this.body);
-  $newProject.append('<hr>');
-  $newProject.removeClass('template');
-
-  return $newProject;
+  var templateScript = $('#projectTemplate').html();
+  var template = Handlebars.compile(templateScript);
+  var compiled = template(this);
+  return compiled;
 };
 
 data.forEach(function(ele) {
