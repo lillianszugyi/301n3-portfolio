@@ -39,20 +39,14 @@ footer a {
   padding: 0 10px;
 }
 img {
-  max-width: 300px;
+  max-width: 100%;
   display: block;
   border: 10px solid #FFFFFF;
   margin: 30px auto;
 }
 
-@media screen and (min-width: 600px) {
+/*@media screen and (min-width: 600px) {
   img {
-    max-width: 600px;
-  }
-}
-
-@media screen and (min-width: 960px) {
-  img {
-    max-width: 960px;
+    max-width: 100%;
   }
 }
