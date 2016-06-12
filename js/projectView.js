@@ -35,8 +35,22 @@ projectView.handleMainNav = function() {
   $('.main-nav .navBlock:first').click();
 };
 
+projectView.hamburgerToggle = function() {
+  $('.icon-menu').on('click', function() {
+    $('nav ul').toggle('slow');
+  });
+  $(window).on('resize', function() {
+    if ($(window).width() >= 600) {
+      $('nav ul').show();
+    } else {
+      $('nav ul').hide();
+    }
+  });
+};
+
   $(document).ready(function(){
     projectView.populateFilters();
     projectView.handleCategoryFilter();
     projectView.handleMainNav();
+    projectView.hamburgerToggle();
   });
