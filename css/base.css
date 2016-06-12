@@ -25,3 +25,7 @@ img {
   border: 10px solid #FFFFFF;
   margin: 30px auto;
 }
+
+select {
+  background-color: transparent;
+}
