@@ -32,7 +32,7 @@ projectView.handleMainNav = function() {
     $("#" + $(this).data('content')).fadeIn('slow');
   });
 
-  $('.main-nav .tab:first').click();
+  $('.main-nav .navBlock:first').click();
 };
 
   $(document).ready(function(){
