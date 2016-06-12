@@ -3,34 +3,63 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/icons.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <title>Lillian Szugyi, UX Designer</title>
   </head>
   <body>
     <header>
       <h1>LILLIAN SZUGYI</h1>
+
+      <nav class="main-nav">
+        <ul>
+          <li class="navBlock" data-content="about"><a href="#">ABOUT</a></li>
+          <li class="navBlock" data-content="projects"><a href="#">PROJECTS</a></li>
+          <li class="navBlock"><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <section id="articles" class="tab-content">
+        <div>
+          <ul id="filters">
+            <li>
+              <select id="category-filter">
+                <option value="">Filter by Categories</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+      </section>
+
     </header>
-    <nav>
-      <ul>
-        <li class="navBlock"><a href="#About">ABOUT</a></li>
-        <li class="navBlock"><a href="#Projects">PROJECTS</a></li>
-        <li class="navBlock"><a href="#Contact">CONTACT</a></li>
-      </ul>
-    </nav>
     <main>
-      <section id="projects">
+
+      <section id="about" class="tab-content">
+        <header>
+          <h1>Hi, I'm Lillian. When I grow up, I want to make the web easy for everyone to access.</h1>
+        </header>
+        <section>
+          <p>
+            I have worn many hats in my professional career, but one recurring theme is that I make things easier for others. In this new chapter of my life, I aspire to create better web experiences, focusing on making content accessible to more people.
+          </p>
+        </section>
+      </section>
+
+      <section id="projects" class="tab-content">
         <article class="template" data-category="">
           <header>
             <h1></h1>
           </header>
-        <section class="project-body"></section>
-      </article>
+            <section class="project-body"></section>
+        </article>
       </section>
 
     </main>
     <footer>
-      &copy; 2016 Lillian Szugyi | <a href="http://twitter.com/lillianszugyi">Twitter</a> |
-      <a href="http://github.com/lillianszugyi">Github</a>
+      &copy; 2016 Lillian Szugyi
+      <a class="icon-twitter" title="Twitter" href="http://twitter.com/lillianszugyi"></a>
+      <a class="icon-github" title="Github" href="http://github.com/lillianszugyi"></a>
+      <a class="icon-linkedin" title="LinkedIn" href="https://www.linkedin.com/in/lillianszugyi"></a>
     </footer>
     <script src="js/projects.js"></script>
     <script src="js/script.js"></script>
