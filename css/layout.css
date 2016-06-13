@@ -16,6 +16,9 @@ a{
   .profile-image {
     float: left;
   }
+  #profile p {
+    padding-left: 12em;
+  }
 
   nav ul {
     display: unset;
