@@ -9,7 +9,7 @@ projectView.populateFilters = function() {
         $('#category-filter').append(optionTag);
       }
     }
-  })
+  });
 };
 
 projectView.handleCategoryFilter = function() {
@@ -29,7 +29,7 @@ projectView.handleCategoryFilter = function() {
 projectView.handleMainNav = function() {
   $('.main-nav').on('click', 'li', function() {
     $('.tab-content').fadeOut();
-    $("#" + $(this).data('content')).fadeIn('slow');
+    $('#' + $(this).data('content')).fadeIn('slow');
   });
 
   $('.main-nav .navBlock:first').click();
@@ -48,9 +48,9 @@ projectView.hamburgerToggle = function() {
   });
 };
 
-  $(document).ready(function(){
-    projectView.populateFilters();
-    projectView.handleCategoryFilter();
-    projectView.handleMainNav();
-    projectView.hamburgerToggle();
-  });
+$(document).ready(function(){
+  projectView.populateFilters();
+  projectView.handleCategoryFilter();
+  projectView.handleMainNav();
+  projectView.hamburgerToggle();
+});
