@@ -3,7 +3,7 @@ nav ul {
   display: none;
 }
 
-nav li {
+a{
   display:inline;
   list-style:none;
   text-decoration: none;
@@ -13,8 +13,18 @@ nav li {
   .icon-menu {
     display: none;
   }
+  .profile-image {
+    float: left;
+  }
+  #profile p {
+    padding-left: 12em;
+  }
 
   nav ul {
     display: unset;
   }
+}
+
+footer {
+  margin-top: 5em;
 }
