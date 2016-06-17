@@ -14,6 +14,7 @@
           <h1>{{title}}</h1>
         </header>
           <section class="project-body">{{{body}}}</section>
+          <a href="#">Read More &rarr;</a>
           <hr>
       </article>
     </script>
@@ -32,8 +33,8 @@
         </ul>
       </nav>
     </header>
-    <main>
 
+    <main>
       <section id="about" class="tab-content">
         <article>
           <h1>Hi, I'm Lillian. When I grow up, I want to make the web easy for everyone to access.</h1>
@@ -67,10 +68,10 @@
       <a class="icon-github" title="Github" href="http://github.com/lillianszugyi"></a>
       <a class="icon-linkedin" title="LinkedIn" href="https://www.linkedin.com/in/lillianszugyi"></a>
     </footer>
-    <script src="js/projects.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/projectView.js">
-
+    <script src="js/projectView.js"></script>
+    <script type="text/javascript">
+      Project.fetchProjects();
     </script>
   </body>
 </html>

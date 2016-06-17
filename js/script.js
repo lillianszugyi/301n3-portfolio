@@ -1,10 +1,10 @@
-var projectArr = [];
-
 function Project (opts) {
   this.title = opts.title;
   this.category = opts.category;
   this.body = opts.body;
 }
+
+Project.all = [];
 
 Project.prototype.toHtml = function() {
   var templateScript = $('#projectTemplate').html();
@@ -13,10 +13,13 @@ Project.prototype.toHtml = function() {
   return compiled;
 };
 
-data.forEach(function(ele) {
-  projectArr.push(new Project(ele));
-});
+Project.prepProjects = function(data) {
+  data.forEach(function(ele) {
+    Project.all.push(new Project(ele));
+  });
+};
 
-projectArr.forEach(function(a){
-  $('#projects').append(a.toHtml());
-});
+// Project.fetchProjects = function() {
+//   if(localStorage.data) {
+//
+//   } else {
