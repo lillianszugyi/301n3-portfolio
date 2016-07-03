@@ -22,22 +22,22 @@
   <body>
     <div class="icon-menu"></div>
     <header>
-      <h1><a href="./">LILLIAN SZUGYI</a></h1>
+      <h1><a href="/">LILLIAN SZUGYI</a></h1>
 
       <nav class="main-nav">
         <ul>
-          <li class="navBlock" data-content="about"><a href="#">ABOUT</a></li>
-          <li class="navBlock" data-content="projects"><a href="#">PROJECTS</a></li>
-          <li class="navBlock"><a href="#">CONTACT</a></li>
+          <li class="navBlock" data-content="about"><a href="/">ABOUT</a></li>
+          <li class="navBlock" data-content="projects"><a href="projects">PROJECTS</a></li>
+          <li class="navBlock"><a href="contact">CONTACT</a></li>
         </ul>
       </nav>
     </header>
     <main>
 
       <section id="about" class="tab-content">
-        <article>
+        <section>
           <h1>Hi, I'm Lillian. When I grow up, I want to make the web easy for everyone to access.</h1>
-        </article>
+        </section>
         <section id="profile">
             <img src="/img/lillian.jpg" class="profile-image"/>
             <div>
@@ -67,10 +67,12 @@
       <a class="icon-github" title="Github" href="http://github.com/lillianszugyi"></a>
       <a class="icon-linkedin" title="LinkedIn" href="https://www.linkedin.com/in/lillianszugyi"></a>
     </footer>
-    <script src="js/projects.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/projectView.js">
-
-    </script>
+    <script src="vendor/page.js"></script>
+    <script src="scripts/project.js"></script>
+    <script src="scripts/projectView.js"></script>
+    <script src="scripts/aboutController.js"></script>
+    <script src="scripts/projectController.js"></script>
+    <script src="scripts/contactController.js"></script>
+    <script src="scripts/routes.js"></script>
   </body>
 </html>

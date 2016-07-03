@@ -13,9 +13,9 @@ Project.prototype.toHtml = function() {
   return compiled;
 };
 
-data.forEach(function(ele) {
-  projectArr.push(new Project(ele));
-});
+// data.forEach(function(ele) {
+//   projectArr.push(new Project(ele));
+// });
 
 projectArr.forEach(function(a){
   $('#projects').append(a.toHtml());
