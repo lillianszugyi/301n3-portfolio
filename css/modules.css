@@ -28,3 +28,7 @@ div.icon-menu {
 #profile {
   overflow: auto;
 }
+
+select {
+  background-color: transparent;
+}
