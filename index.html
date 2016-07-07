@@ -21,11 +21,13 @@
 
     <script id="repo-template" type="text/x-handlebars-template">
       <li>
+        {{#unless fork}}
         <a href="{{html_url}}" target="_blank"><h3>{{name}}</h3></a>
-        <p>Description: {{description}}</p>
+        <p><em>{{description}}</em></p>
         <p>Language: {{language}}</p>
-        <p>Created: {{created_at}}</p>
         <p>Last updated: {{updated_at}}</p>
+        <hr>
+        {{/unless}}
       </li>
     </script>
 
@@ -56,7 +58,7 @@
               <p>I have worn many hats in my professional career, but one recurring theme is that I make things easier for others. In this new chapter of my life, I aspire to create better web experiences, focusing on making content accessible to more people.</p>
             </div>
             <div>
-              <h1>Currently, I'm a student at Code Fellows in Seattle. Here are some of the projects I've worked on.</h1>
+              <h1>Currently, I'm a student at <a href="https://www.codefellows.org/courses/code-301/intermediate-software-development">Code Fellows</a> in Seattle. Here are some of the projects I've worked on.</h1>
               <ul>
                 <li>Github Repositories</li>
               </ul>
@@ -82,8 +84,14 @@
         </section>
         <section>
               <p>
-                Contact form here.
+                <!-- Fix contact form. -->
               </p>
+              <form class="contact-form">
+                <input type="text" name="name" placeholder="name" label="name"><br>
+                <input type="text" name="email" placeholder="email" label="email"><br>
+                <textarea placeholder="Message"></textarea><br>
+                <input type="button" name="name" value="Submit">
+              </form>
         </section>
       </section>
 
