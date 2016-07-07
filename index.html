@@ -18,6 +18,17 @@
           <hr>
       </article>
     </script>
+
+    <script id="repo-template" type="text/x-handlebars-template">
+      <li>
+        <a href="{{html_url}}" target="_blank"><h3>{{name}}</h3></a>
+        <p>Description: {{description}}</p>
+        <p>Language: {{language}}</p>
+        <p>Created: {{created_at}}</p>
+        <p>Last updated: {{updated_at}}</p>
+      </li>
+    </script>
+
     <title>Lillian Szugyi, UX Designer</title>
   </head>
   <body>
@@ -40,11 +51,15 @@
           <h1>Hi, I'm Lillian. When I grow up, I want to make the web easy for everyone to access.</h1>
         </section>
         <section id="profile">
-            <img src="/img/lillian.jpg" class="profile-image"/>
+            <!-- <img src="/img/lillian.jpg" class="profile-image"/> -->
             <div>
-              <p>
-                I have worn many hats in my professional career, but one recurring theme is that I make things easier for others. In this new chapter of my life, I aspire to create better web experiences, focusing on making content accessible to more people.
-              </p>
+              <p>I have worn many hats in my professional career, but one recurring theme is that I make things easier for others. In this new chapter of my life, I aspire to create better web experiences, focusing on making content accessible to more people.</p>
+            </div>
+            <div>
+              <h1>Currently, I'm a student at Code Fellows in Seattle. Here are some of the projects I've worked on.</h1>
+              <ul>
+                <li>Github Repositories</li>
+              </ul>
             </div>
         </section>
       </section>
@@ -80,11 +95,14 @@
       <a class="icon-linkedin" title="LinkedIn" href="https://www.linkedin.com/in/lillianszugyi"></a>
     </footer>
     <script src="vendor/page.js"></script>
+    <script src="scripts/githubtoken.js"></script>
     <script src="scripts/project.js"></script>
     <script src="scripts/projectView.js"></script>
     <script src="scripts/aboutController.js"></script>
     <script src="scripts/projectController.js"></script>
     <script src="scripts/contactController.js"></script>
+    <script src="scripts/repo.js"></script>
+    <script src="scripts/repoView.js"></script>
     <script src="scripts/routes.js"></script>
   </body>
 </html>
