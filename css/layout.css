@@ -3,7 +3,7 @@ nav ul {
   display: none;
 }
 
-a{
+a {
   display:inline;
   list-style:none;
   text-decoration: none;
@@ -20,7 +20,7 @@ a:hover {
     float: left;
   }
   #profile p {
-    padding-left: 12em;
+    /*padding-left: 12em;*/
   }
 
   nav ul {
