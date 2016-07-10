@@ -1,22 +1,27 @@
 {
   "name": "301-n3-portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is my portfolio project for CF301, Intermediate Software Development at Code Fellows in Seattle WA.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lillianszugyi/301n3-portfolio.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/lillianszugyi/301n3-portfolio/issues"
   },
   "homepage": "https://github.com/lillianszugyi/301n3-portfolio#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "express-request-proxy": "^2.0.0"
+  },
+  "devDependencies": {
+    "pg": "^6.0.2"
   }
 }
